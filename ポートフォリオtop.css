@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+html{
+    font-family:"Hiragino Sans","ヒラギノ角ゴシック";
+    color:gray;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+    width:100%;
+    max-width:960px;
+    height:auto;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    vertical-align:middle;
+    background-color:rgb(200,255,227);
+}
+
+nav>div>a{
+    color:inherit;
+    text-decoration:none;
+}
+
+nav{
+    height:50px;
+    display:flex;
+    justify-content:flex-end;
+    background-color:rgba(173,193,254,0.5);
+    position: sticky;
+    top:0;
+    z-index:100;
+}
+
+nav>div:hover{
+    transition: all 0.5s;
+    background-color:rgba(148, 200, 255, 0.8);
+}
+
+nav>div{
+    height:50px;
+    width:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position:relative;
+}
+
+header{
+    height:540px;
+    background-color:rgb(255, 255, 255);
+}
+
+h1{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+}
+
+.slide{
+    position   :relative;
+    max-width  :100%;
+    height     :540px;
+    margin     :auto;
+    overflow   :hidden;
+    opacity:0.5;
+}
+
+.slide{
+    animation :imgfade 4s infinite;
+    opacity: 0;
+    }
+    
+    @keyframes imgfade {
+        0% {
+            opacity:0;
+        }
+        
+        15% {
+            opacity:0.5;
+        }
+        50% {
+            opacity:0.5;
+        }
+    
+        85% {
+            opacity:0.5;
+        }
+        100% {
+            opacity:0;
+        }
+    }
+
+#dog{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+table{
+    text-align:left;
+    margin:30px;
+    height:70%;
+}
+
+#content{
+    height:1300px;
+}
