@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="noindex,nofollow" />
+        <title>YANO PORTFOLIO</title>
+        <link rel="stylesheet" href="ポートフォリオtop.css">
+    </head>
+    <body>
+        <div id="wrapper">
+                <nav>
+                    <div><a href="#wrapper">TOP</a></div>
+                    <div><a href="#profile">プロフィール</a></div>
+                    <div><a href="#content">制作物</a></div>
+                </nav>
+            <header>
+                <div>
+                    <div><img class="slide" src="images/top0.jpg" alt="トップ画像"></div>
+                    <script>
+                        let images=[["images/top0.jpg"],["images/top1.jpg"],["images/top2.jpg"]];
+                        const changeimg=document.getElementsByClassName("slide")[0];
+                        let timeID,i=0,j=0;
+                        function change(){
+                            i++;
+                            if(i>3){
+                                clearTimeout(timeID);
+                                //return;
+                            }
+                            j++;
+                            if(j>images.length-1){
+                                j=0;
+                            }
+                            changeimg.src=images[j];
+                            timeID=setTimeout(change,4000)
+                        }
+                        setTimeout(change,4000);
+                    </script>
+                    <h1>YANO SHIORI<br>PORTFOLIO</h1>
+                </div>
+            </header>
+            <main>
+                <div id="profile">
+                    <div class="box">
+                        <h1>プロフィール</h1>
+                        <img src="images/枠.png" alt="見出し枠">
+                    </div>
+                    <div id="dog">
+                        <img src="images/プロフィール画像2.png" alt="プロフィール写真(犬)">
+                        <div class="text">
+                        <ul>
+                            <li>矢野　栞</li>
+                            <li>1998年 2月 10日生まれ</li>
+                            <li>A型 みずがめ座</li>
+                        </ul>
+                            <table>
+                        <tr>
+                            <td width="80">経歴</td>
+                            <td>北海学園大学 卒業<br>
+                                大学在学3年間
+                                ポケモンセンターサッポロで<br>アルバイトとして勤務<br>
+                                株式会社ケイシイシイ 入社<br>
+                                現在 職業訓練学校の北関東学院で<br>Webプログラミングデザイン科に在学中
+                            </td>
+                        </tr>
+                            <td width="80">趣味</td>
+                            <td>【音楽ライブ、フェス】<br>
+                                今年も岩見沢で開催された<br>JOIN ALIVEに参加してきました<br>
+                                【スノーボード】<br>
+                                大学に入ってから本格的に始めて<br>脱中級者を目指しています<br>
+                                【ゲーム】<br>
+                                PCのゲームや、NintendoSwitchのゲームなど<br>幅広く遊んでいます
+                            </td>
+                        </tr>
+                        </table>
+                        ←2023年1月生まれのパピヨンの「ろろ」ちゃんです
+                        </div>
+                    </div>
+                </div>
+                <div id="content">
+                    <div class="box">
+                        <h1>制作物</h1>
+                        <img src="images/枠.png" alt="見出し枠">
+                    </div>
+                    <div>
+                        <h3>架空サイト(動物病院)</h3>
+                        <div><img src="images/kakusite2.png"></div>
+                        <div>
+                        <h3>製作日数</h3>
+                        <p>4日</p>
+                        <h3>コメント</h3>
+                        <p>お年寄りやお子様が見てもわかりやすく、<br>
+                        温かみと親しみを感じられるような<br>
+                        淡いオレンジを使用しました。<br>
+                        ロゴや画像はフリー素材をしようしております。<br>
+                        制作するにあたり、様々なサイトを拝見して<br>
+                        自分なりにわかりやすい配置を考えました。</p>
+                        <p>URL：<a href="https://yodaleman.github.io/hokkaido-animalclinic/">https://yodaleman.github.io/hokkaido-animalclinic/</a></p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <small>&copy;2023 SHIORI YANO</small>
+            </footer>
+        </div>
+    </body>
+</html>
