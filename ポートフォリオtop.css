@@ -120,6 +120,10 @@ td.title{
     text-align:center;
 }
 
+td{
+    border:solid 1px grey;
+}
+
 #content{
     height:auto;
 }
