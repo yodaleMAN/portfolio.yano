@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+html{
+    font-family:"Hiragino Sans","ヒラギノ角ゴシック";
+    color:gray;
+    scroll-behavior: smooth;
+}
+
+#wrapper{
+    width:100%;
+    max-width:960px;
+    height:auto;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    vertical-align:middle;
+}
+
+img{
+    max-width:50%;
+}
