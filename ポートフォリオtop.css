@@ -116,5 +116,9 @@ table{
 }
 
 #content{
-    height:1300px;
+    height:auto;
 }
+
+.portfolio{
+    margin-bottom:70px;
+}   
