@@ -115,6 +115,10 @@ table{
     height:70%;
 }
 
+tr{
+    margin-bottom:20px;
+}
+
 #content{
     height:auto;
 }
